@@ -182,6 +182,7 @@
 
         .right{ background-image: url('../images/btn-minus.svg'); transform: none; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; }
       }
+      border-bottom: 2px solid #00aad2;
     }
     //2depth
     > .nav{
@@ -211,8 +212,7 @@
   .nav-sidebar {
     > .nav-item {
       > .nav-link{
-        justify-content: center;
-        > i{margin-right: 0;}
+        > i{margin-right: 0;margin-left: 18px;transition: all .15s;}
         > p{margin-left: 0;}
       }
     }

@@ -103,6 +103,8 @@
 
 .icon-s-add { background-image: url("../images/icon-s-add.svg"); width: 12.5px; height: 12.5px; }
 
+.icon-refresh { background-image: url("../images/icon-refresh.svg"); width: 24px; height: 24px; }
+
 input.form-control { height: 36px; }
 
 select.form-control { height: 36px; border: 1px solid #e4dcd3; font-size: 17px; letter-spacing: -0.34px; border-radius: 4px; -webkit-appearance: none; -moz-appearance: none; background-position: right 13px top 50%; background-repeat: no-repeat; background-image: url("../images/icon-arrow-01.svg"); padding-right: 40px; }
@@ -139,7 +141,7 @@ select.form-control { height: 36px; border: 1px solid #e4dcd3; font-size: 17px; 
 
 .content-top { margin-bottom: 30px; }
 
-.main-tab .nav { background: #fff; border-radius: 50rem; overflow: hidden; position: relative; }
+.main-tab .nav { background: #fff; border-radius: 50rem; overflow: hidden; position: relative; display: inline-flex; }
 
 .main-tab .nav::before { content: ''; border: 1px solid #e4dcd3; position: absolute; left: 0; top: 0; right: 0; bottom: 0; border-radius: 50rem; }
 
@@ -152,7 +154,7 @@ select.form-control { height: 36px; border: 1px solid #e4dcd3; font-size: 17px; 
 .main-tab .nav-link.active::after { content: ''; display: inline-block; vertical-align: middle; background: url("../images/btn-plus.svg") no-repeat 50% 50%; width: 16px; height: 16px; transform: translateY(-1px); margin-left: 6px; }
 
 @media (max-width: 991.98px) { .main-tab { margin: -24px -24px 0; }
-  .main-tab .nav { background: transparent; border-radius: 0; flex-wrap: nowrap; }
+  .main-tab .nav { background: transparent; border-radius: 0; flex-wrap: nowrap; display: flex; }
   .main-tab .nav::before { display: none; }
   .main-tab .nav-item { flex-basis: 0; flex-grow: 1; max-width: 100%; }
   .main-tab .nav-link { border-radius: 50rem; border: 1px solid transparent !important; min-width: 0; padding: 12px 1rem; }
@@ -244,7 +246,17 @@ select.form-control { height: 36px; border: 1px solid #e4dcd3; font-size: 17px; 
 
 .has-sort.active::before { transform: rotate(180deg); }
 
+.statistic-wrap { margin: -30px; }
+
 .statistic-wrap .sub-title { font-size: 16px; margin: 24px 0 15px 12px; }
+
+.statistic-wrap > .row > [class^=col]:first-of-type { border-right: 1px solid #e4dcd3; }
+
+.statistic-left { padding: 30px 20px; }
+
+.statistic-top { padding: 30px 20px; }
+
+.statistic-bottom { padding: 30px 20px; border-top: 1px solid #e4dcd3; }
 
 .drag-area { padding: 0 12px; }
 
@@ -265,4 +277,22 @@ select.form-control { height: 36px; border: 1px solid #e4dcd3; font-size: 17px; 
 .cell > span { display: block; width: 161px; height: 32px; line-height: 32px; color: #fff; font-weight: 500; letter-spacing: -0.28px; border-radius: 4px; padding: 0 13px; }
 
 .cell + .cell { margin-top: 6px; }
+
+.drop-area { height: 200px; border-radius: 4px; border: dashed 2px #e4dcd3; background-color: #ffffff; display: flex; align-items: center; justify-content: center; padding: 20px; }
+
+.drop-area > div { text-align: center; }
+
+.drop-area p { font-size: 14px; color: #afafaf; letter-spacing: -0.28px; margin-bottom: 5px; }
+
+.statistic-bottom .drop-area { height: 180px; width: 161px; margin-top: 28px; }
+
+.drop-area.active { border-color: #2a609e; }
+
+.refresh { display: inline-flex; align-items: center; margin-bottom: 10px; }
+
+.refresh span { font-size: 16px; letter-spacing: -0.32; margin-right: 2px; }
+
+.drop-zone .cell > span { position: relative; }
+
+.drop-zone .cell > span::before { content: ''; background: url("../images/icon-s-close.svg") no-repeat 50% 50%; width: 12px; height: 12px; position: absolute; right: 13px; top: 50%; transform: translateY(-50%); }
 /*# sourceMappingURL=hyundai.css.map */

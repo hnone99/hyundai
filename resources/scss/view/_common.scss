@@ -20,6 +20,7 @@
 .icon-next{background-image: url('../images/icon-right.svg');width: 10px;height: 10px;}
 .icon-import{background-image: url('../images/icon-import.svg');width: 70px;height: 70px;}
 .icon-s-add{background-image: url('../images/icon-s-add.svg');width: 12.5px;height: 12.5px;}
+.icon-refresh{background-image: url('../images/icon-refresh.svg');width: 24px;height: 24px;}
 
 input.form-control{
     height: 36px;
@@ -76,7 +77,7 @@ select.form-control{
 
 .main-tab{
     .nav{
-        background: #fff;border-radius: 50rem;overflow: hidden;position: relative;
+        background: #fff;border-radius: 50rem;overflow: hidden;position: relative;display: inline-flex;
         &::before{
             content: '';border: 1px solid $border-color;
             position: absolute;left: 0;top: 0;right: 0;bottom: 0;border-radius: 50rem;
@@ -96,7 +97,7 @@ select.form-control{
     .main-tab{
         margin: -24px -24px 0;
         .nav{
-            background: transparent;border-radius: 0;flex-wrap: nowrap;
+            background: transparent;border-radius: 0;flex-wrap: nowrap;display: flex;
             &::before{
                 display: none;
             }
@@ -251,8 +252,16 @@ select.form-control{
 }
 
 .statistic-wrap{
+    margin: -30px;
     .sub-title{font-size: 16px;margin: 24px 0 15px 12px;}
+    > .row{
+        > [class^=col]:first-of-type{border-right: 1px solid $border-color;}
+    }
 }
+.statistic-left{padding: 30px 20px;}
+.statistic-right{}
+.statistic-top{padding: 30px 20px;}
+.statistic-bottom{padding: 30px 20px;border-top: 1px solid $border-color;}
 
 .drag-area{
     padding: 0 12px;
@@ -276,4 +285,28 @@ select.form-control{
     cursor: pointer;
     > span{display: block;width: 161px;height: 32px;line-height: 32px;color: #fff;font-weight: 500;letter-spacing: -0.28px;border-radius: 4px;padding: 0 13px;}
     & + .cell{margin-top: 6px;}
+}
+
+.drop-area{
+    height: 200px;border-radius: 4px;border: dashed 2px #e4dcd3;background-color: #ffffff;display: flex;align-items: center;justify-content: center;padding: 20px;
+    > div{text-align: center;}
+    p{font-size: 14px;color: #afafaf;letter-spacing: -0.28px;margin-bottom: 5px;}
+    .statistic-bottom &{height: 180px;width: 161px;margin-top: 28px;}
+    &.active{border-color: $blue;}
+}
+
+
+.refresh{display: inline-flex;align-items: center;margin-bottom: 10px;
+    span{font-size: 16px;letter-spacing: -0.32;margin-right: 2px;}
+}
+
+
+
+.drop-zone{
+    .cell{
+        > span{
+            position: relative;
+            &::before{content: '';background: url('../images/icon-s-close.svg') no-repeat 50% 50%;width: 12px;height: 12px;position: absolute;right:13px;top:50%;transform: translateY(-50%);}
+        }
+    }
 }
