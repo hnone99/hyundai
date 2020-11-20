@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>HYUNDAI</title>
+    <title>HYUNDAI Guide</title>
 
     <!-- chartjs -->
     <link rel="stylesheet" href="../../resources/plugins/chart.js/Chart.min.css">
@@ -34,6 +34,7 @@
         <section>
             <h2>Icon</h2>
             <div style="background: rgba(0,0,0,0.25);padding: 10px;">
+                <i class="icon-logo-sm"></i>
                 <i class="icon-logo"></i>
                 <i class="icon-menu"></i>
                 <i class="icon-logout"></i>
@@ -53,16 +54,27 @@
                 <i class="icon-next"></i>
                 <i class="icon-import"></i>
                 <i class="icon-s-add"></i>
+                <i class="icon-s-minus"></i>
                 <i class="icon-refresh"></i>
+                <i class="icon-photo"></i>
+                <i class="icon-close"></i>
+                <i class="icon-top"></i>
             </div>
         </section>
         <section>
             <h2>버튼</h2>
             <div>
+                <button type="button" class="btn btn-secondary btn-block">버튼(block)</button>
                 <button type="button" class="btn btn-primary">버튼</button>
                 <button type="button" class="btn btn-success">버튼</button>
                 <button type="button" class="btn btn-info">버튼</button>
                 <button type="button" class="btn btn-danger">버튼</button>
+                <button type="button" class="btn btn-light">more</button>
+                <button type="button" class="btn btn-outline-primary">버튼</button>
+                <button type="button" class="btn btn-outline-success">버튼</button>
+                <button type="button" class="btn btn-outline-info">버튼</button>
+                <button type="button" class="btn btn-outline-danger">버튼</button>
+                <button type="button" class="btn btn-outline-light">버튼</button>
                 <button type="button" class="btn btn-sm btn-primary">버튼</button>
                 <button type="button" class="btn btn-sm btn-success">버튼</button>
                 <button type="button" class="btn btn-sm btn-info">버튼</button>
@@ -85,12 +97,50 @@
             </div>
         </section>
         <section>
+            <h2>Form</h2>
+            <div>
+                <input type="text" class="form-control">
+                <select name="" id="" class="form-control">
+                    <option value="">10</option>
+                    <option value="">20</option>
+                </select>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-append">
+                        <button class="btn btn-primary"><i class="icon-search"><span class="sr-only">SEARCH</span></i></button>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <label class="custom-control custom-control-checkbox-square">
+                    <input type="checkbox" id="" name=""><span>Remember me</span><i></i>
+                </label>
+
+                <label class="custom-control custom-control-checkbox-secondary">
+                    <input type="checkbox" id="" name=""><b>Select All</b><i></i>
+                </label>
+
+                <label class="custom-control custom-control-checkbox-primary">
+                    <input type="checkbox" id="" name=""><span class="text-primary">North America</span><i></i>
+                </label>
+
+                <label class="custom-control custom-control-radio">
+                    <input type="radio" id="a1" name="Activation"><span>Activation</span><i></i>
+                </label>
+                <label class="custom-control custom-control-radio">
+                    <input type="radio" id="a2" name="Activation"><span>Deactivation</span><i></i>
+                </label>
+            </div>
+        </section>
+        <section>
             <h2>Text</h2>
             <div>
                 <span class="text-primary">텍스트 컬러</span>
+                <span class="text-secondary">텍스트 컬러</span>
                 <span class="text-info">텍스트 컬러</span>
                 <span class="text-success">텍스트 컬러</span>
                 <span class="text-danger">텍스트 컬러</span>
+                <a href="#none" class="text-underline">텍스트 underline</a>
             </div>
         </section>
         <section>
@@ -165,6 +215,8 @@
     <script src="../../resources/js/adminlte.min.js"></script>
     <!-- chartjs -->
     <script src="../../resources/plugins/chart.js/Chart.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
 
     <script>
     </script>

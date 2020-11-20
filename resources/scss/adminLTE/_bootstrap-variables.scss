@@ -46,26 +46,27 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $navy:    #002c5f !default;
 $sky:    #aacae6 !default;
+$lightblue:    #00aad2 !default;
 
 $colors: () !default;
 $colors: map-merge((
         "blue":       $blue,
-        "indigo":     $indigo,
-        "purple":     $purple,
-        "pink":       $pink,
+        //"indigo":     $indigo,
+        //"purple":     $purple,
+        //"pink":       $pink,
         "red":        $red,
         "orange":     $orange,
         "yellow":     $yellow,
         "green":      $green,
-        "teal":       $teal,
-        "cyan":       $cyan,
+        //"teal":       $teal,
+        //"cyan":       $cyan,
         "white":      $white,
         "gray":       $gray-600,
         "gray-dark":  $gray-800
 ), $colors);
 
 $primary:       $navy !default;
-$secondary:     $gray-600 !default;
+$secondary:     $lightblue !default;
 $success:       $blue !default;
 $info:          $sky !default;
 $warning:       $yellow !default;
@@ -400,7 +401,7 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
 $input-bg:                              $white !default;
-$input-disabled-bg:                     $gray-200 !default;
+$input-disabled-bg:                     #e4dcd3 !default;
 
 $input-color:                           $gray-700 !default;
 $input-border-color:                    $border-color !default;
@@ -444,7 +445,7 @@ $form-check-input-margin-x:             .25rem !default;
 $form-check-inline-margin-x:            .75rem !default;
 $form-check-inline-input-margin-x:      .3125rem !default;
 
-$form-group-margin-bottom:              1rem !default;
+$form-group-margin-bottom:              .75rem !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
@@ -581,7 +582,7 @@ $zindex-tooltip:                    1070 !default;
 
 // Navs
 
-$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                .75rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-disabled-color:           $gray-600 !default;
 

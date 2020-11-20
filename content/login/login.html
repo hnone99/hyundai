@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>HYUNDAI</title>
+
+    <!-- chartjs -->
+    <link rel="stylesheet" href="../../resources/plugins/chart.js/Chart.min.css">
+    <!-- Template style -->
+    <link rel="stylesheet" href="../../resources/css/adminlte.css">
+    <!-- Hyundai style -->
+    <link rel="stylesheet" href="../../resources/css/hyundai.css">
+    <!-- Additional style -->
+    <link rel="stylesheet" href="../../resources/css/additional.css">
+</head>
+
+<body class="body-login"> <!-- 로그인 페이지에 body-login 클래스 필요 -->
+
+    <div id="login">
+        <div class="row row-0">
+            <div class="col-12 col-md">
+                <div class="login-slogan">
+                    <div class="text">
+                        Global <br><span class="text-secondary">Mystery</span> <br>Shopping
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="login">
+                    <div class="form">
+                        <h1>
+                            <i class="icon-logo"><span class="sr-only">HYUNDAI</span></i>
+                            <p>SIGN IN</p>
+                        </h1>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pw" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="custom-control custom-control-checkbox-square">
+                                <input type="checkbox" id="" name=""><span>Remember me</span><i></i>
+                            </label>
+                        </div>
+                        <div class="btn-area">
+                            <button type="submit" class="btn btn-secondary btn-block" disabled onclick="window.location.href='../global_total/global_total.html'" id="btn-login">SIGN IN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="../../resources/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../resources/js/adminlte.min.js"></script>
+    <!-- chartjs -->
+    <script src="../../resources/plugins/chart.js/Chart.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#email, #pw').keyup(function(){
+                if($('#email').val() !== '' && $('#pw').val() !== ''){
+                    $('#btn-login').prop('disabled',false);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

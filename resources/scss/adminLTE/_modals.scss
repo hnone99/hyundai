@@ -17,24 +17,12 @@
   }
 }
 
+.modal-auto{width: auto;max-width: none;}
 
-// BG Color Variations Fixes
 .modal-content {
-  &.bg-warning {
-    .modal-header,
-    .modal-footer {
-      border-color: $gray-800;
-    }
-  }
-
-  &.bg-primary,
-  &.bg-secondary,
-  &.bg-info,
-  &.bg-danger,
-  &.bg-success, {
-    .close {
-      color: $white;
-      text-shadow: 0 1px 0 #000;
-    }
-  }
+  border-radius: 0;width: auto;margin: 0 auto;border: 0;
 }
+
+.modal-title{font-family: 'HyundaiSansHeadKR';font-size:20px;font-weight: 500;letter-spacing: -0.2px;line-height: 1.25;}
+
+.modal-header .close{font-size: 0;}

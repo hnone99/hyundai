@@ -169,12 +169,11 @@
 .nav-sidebar {
   > .nav-item {
     > .nav-link{
-      padding: 11px 12px;display: flex;align-items: center;
       &.active,
       &:focus{background: #00aad2;}
-      > i{margin-right: 7px;}
+      i{vertical-align: middle;margin-top: -2px;}
       .right{
-        right: 12.5px;top: 50%;margin-top: -6.5px;
+        right: 1rem;top: 50%;margin-top: -6.5px;
       }
     }
     &.menu-open{
@@ -209,14 +208,7 @@
 }
 
 .sidebar-collapse{
-  .nav-sidebar {
-    > .nav-item {
-      > .nav-link{
-        > i{margin-right: 0;margin-left: 18px;transition: all .15s;}
-        > p{margin-left: 0;}
-      }
-    }
-  }
+  .main-sidebar .icon-logo{background-image: url('../images/img-logo-small.svg');width: 30.1px;height: 15.9px;}
 }
 
 .sidebar .nav-link p,

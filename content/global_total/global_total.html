@@ -42,7 +42,7 @@
                     </p>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btn-logout"><i class="icon-logout"><span class="sr-only">logout</span></i></a>
+                    <a href="../login/login.html" class="btn-logout"><i class="icon-logout"><span class="sr-only">logout</span></i></a>
                 </li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
         <aside class="main-sidebar">
             <!-- Brand Logo -->
             <a href="../global_total/global_total.html" class="brand-link">
-                <img src="../../resources/images/img-logo.svg" alt="HYUNDAI Logo" class="brand-image">
+                <i class="icon-logo"><span class="sr-only">HYUNDAI</span></i>
             </a>
 
             <!-- Sidebar -->
@@ -423,6 +423,146 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="sub-title-area">
+                                    <div class="sub-title">Performance Checklist</div>
+                                </div>
+                                <table class="table table-bordered table-mobile-checklist">
+                                    <caption>Performance Checklist Table</caption>
+                                    <colgroup>
+                                        <col style="width:96px">
+                                        <col>
+                                        <col style="width:70px">
+                                        <col style="width:70px">
+                                        <col style="width:70px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Driver</th>
+                                            <th class="text-center">Performance Checklist</th>
+                                            <th class="text-center">HMC</th>
+                                            <th class="text-center">Comp</th>
+                                            <th class="text-center">HMC- Comp. Gap</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center mobile-badge" rowspan="2">First point of contact</td>
+                                            <td class="text-left bg-cell">Could you find the location and phone number of the showroom online (Google Search, SNS, etc.)?</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="HMC">100</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="Comp">80</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="HMC-Comp.Gap"><span class="text-secondary">Yes</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left bg-cell">How would you rate your level of satisfaction for the overall process of obtaining information and booking online/through phone call? Please rate on a scale of 1-5</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="HMC">100</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="Comp">80</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell bg-cell" data-label="HMC-Comp.Gap"><span class="text-secondary">Yes</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center bg-cell mobile-badge" rowspan="2">Greeting</td>
+                                            <td class="text-left">Were you greeted with the statement "Welcome to Hyundai"?</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="HMC">100</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="Comp">80</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="HMC-Comp.Gap"><span class="text-secondary">Yes</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Did the receptionist kindly respond to your questions?</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="HMC">100</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="Comp">80</td>
+                                            <td class="text-center d-inline-block d-lg-table-cell" data-label="HMC-Comp.Gap"><span class="text-danger">No</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btns-center">
+                                    <button class="btn btn-light">more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="sub-title-area">
+                                    <div class="sub-title">Dealership List</div>
+                                </div>
+                                <div class="table-top">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-12 col-lg-auto">
+                                            <div class="length">
+                                                <span class="d-none d-lg-inline-block">Show</span>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">10</option>
+                                                    <option value="">20</option>
+                                                </select>
+                                                <span class="d-none d-lg-inline-block">ENTRIES</span>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search">
+                                                    <span class="input-group-append">
+                                                        <button class="btn btn-primary"><i class="icon-search"><span class="sr-only">SEARCH</span></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table table-bordered table-mobile-normal">
+                                    <caption>Dealership List Table</caption>
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center"><span class="has-sort">code</span></th>
+                                            <th class="text-center"><span class="has-sort active">Company Name</span></th>
+                                            <th class="text-center"><span class="has-sort">Performance Checklist</span></th>
+                                            <th class="text-center"><span class="has-sort">City</span></th>
+                                            <th class="text-center"><span class="has-sort">Checklist Performance</span></th>
+                                            <th class="text-center"><span class="has-sort">NPS</span></th>
+                                            <th class="text-center"><span class="has-sort">Evaluation Date </span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center d-none d-lg-table-cell" data-label="code">EU-GE-001</td>
+                                            <td class="text-center" data-label="Company Name"><a href="" class="text-secondary text-underline">Automobile Darmas GmbH</a></td>
+                                            <td class="text-left" data-label="Performance Checklist">NW(North Rhine-Westphalia (Düsseldorf))</td>
+                                            <td class="text-center" data-label="City">Recklinghausen</td>
+                                            <td class="text-center" data-label="Checklist Performance">98</td>
+                                            <td class="text-center" data-label="NPS">10</td>
+                                            <td class="text-center" data-label="Evaluation Date">2020-09-20</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center d-none d-lg-table-cell" data-label="code">EU-GE-001</td>
+                                            <td class="text-center" data-label="Company Name"><a href="" class="text-secondary text-underline">Automobile Darmas GmbH</a></td>
+                                            <td class="text-left" data-label="Performance Checklist">NW(North Rhine-Westphalia (Düsseldorf))</td>
+                                            <td class="text-center" data-label="City">Recklinghausen</td>
+                                            <td class="text-center" data-label="Checklist Performance">98</td>
+                                            <td class="text-center" data-label="NPS">10</td>
+                                            <td class="text-center" data-label="Evaluation Date">2020-09-20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table-bottom">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-12 col-lg-auto">
+                                            <div class="showing">
+                                                Showing <span>1</span> to <span>10</span> of <span>58</span> entries
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-auto">
+                                            <nav class="pagination-wrap">
+                                                <ul class="pagination">
+                                                    <li class="page-item prev"><a class="page-link" href="#"><i class="icon-prev"></i></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                    <li class="page-item next"><a class="page-link" href="#"><i class="icon-next"></i></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- //실 컨텐츠 -->
 
                     </div>
@@ -437,6 +577,7 @@
             <div class="copyright">
                 Copyright © 2020 HYUNDAI MOTOR COMPANY ALL RIGHT RESERVED
             </div>
+            <div class="btn-top"><button type="button"><i class="icon-top"><span class="sr-only">TOP</span></i></button></div>
         </footer>
     </div>
     <!-- ./wrapper -->
@@ -451,6 +592,8 @@
     <script src="../../resources/js/adminlte.min.js"></script>
     <!-- chartjs -->
     <script src="../../resources/plugins/chart.js/Chart.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
 
     <script>
         window.onload = function() {

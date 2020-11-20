@@ -42,7 +42,7 @@
                     </p>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btn-logout"><i class="icon-logout"><span class="sr-only">logout</span></i></a>
+                    <a href="../login/login.html" class="btn-logout"><i class="icon-logout"><span class="sr-only">logout</span></i></a>
                 </li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
         <aside class="main-sidebar">
             <!-- Brand Logo -->
             <a href="../global_total/global_total.html" class="brand-link">
-                <img src="../../resources/images/img-logo.svg" alt="HYUNDAI Logo" class="brand-image">
+                <i class="icon-logo"><span class="sr-only">HYUNDAI</span></i>
             </a>
 
             <!-- Sidebar -->
@@ -399,19 +399,182 @@
                                         <div class="kpi">
                                             <div class="row">
                                                 <div class="col-12 col-lg">
-                                                    jscharting
+                                                    <div class="jscharting-area">
+                                                        <div id="chartDiv_1" class="jscharting-frame"></div>
+                                                        <div class="label">Performance</div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-12 col-lg">
-                                                    jscharting
+                                                    <div class="jscharting-area">
+                                                        <div id="chartDiv_2" class="jscharting-frame"></div>
+                                                        <div class="label">NPS</div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-12 col-lg">
-                                                    jscharting
+                                                    <div class="jscharting-area">
+                                                        <div id="chartDiv_3" class="jscharting-frame"></div>
+                                                        <div class="label">Emotional Engagement</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- main KPI start-->
+                            <!-- Gauge char 사용해야함. wani
+                            https://jscharting.com/examples/chart-types/circular-gauge/colorbar-marker/
+                            -->
+                            <script type="text/javascript" src="../../resources/plugins/jscharting/jscharting.js"></script>
+                            <script type="text/javascript" src="../../resources/plugins/jscharting/modules/types.js"></script>
+                            <!--<script type="text/javascript" src="../../resources/plugins/jscharting/dView.js"></script> -->
+                            <script>
+                                //-- chartDiv_1
+                                // JS
+                                var chart_1 = JSC.chart('chartDiv_1', {
+                                    debug: true,
+                                    legend_visible: false,
+                                    yAxis: [
+                                    {
+                                        id: 'y3',
+                                        line_width: 0,
+                                        defaultTick_enabled: false,
+                                        scale_range: [0, 100],
+                                    },
+                                    ],
+                                    xAxis: [
+                                    {
+                                        id: 'x3',
+                                        defaultTick_gridLine_width: 'column',
+                                        spacingPercentage: 0.15,
+                                    },
+                                    ],
+                                    defaultSeries: {
+                                    type: 'gauge column roundCaps',
+                                    shape: {
+                                        innerSize: '75%',
+                                        label: [
+                                        {
+                                            text: '%sum%',
+                                            verticalAlign: 'middle',
+                                            style_fontSize: 20,
+                                        },
+                                        {
+                                            text: '<span class="text-point-sm">30/24</span>',
+                                            verticalAlign: 'middle',
+                                            color: '#afafaf'
+                                        },
+                                        ],
+                                    },
+                                    },
+                                    series: [
+                                    {
+                                        name: 'Column Width Grid',
+                                        palette: [
+                                            '#002c5f',
+                                        ],
+                                        yAxis: 'y3',
+                                        xAxis: 'x3',
+                                        points: [['value', 59]],
+                                    },
+                                    ],
+                                });
+                            </script>
+                            <script>
+                                //-- chartDiv_2
+                                // JS
+                                var chart_2 = JSC.chart('chartDiv_2', {
+                                    debug: true,
+                                    legend_visible: false,
+                                    defaultTooltip_enabled: false,
+                                    xAxis_spacingPercentage: 0.4,
+                                    yAxis: [
+                                    {
+                                        id: 'ax2',
+                                        scale_range: [0, 100],
+                                        defaultTick: { padding: 10, enabled: false },
+                                        //customTicks: [0, 300, 600, 700, 800, 850],
+                                        line: { width: 10, color: 'smartPalette:pal2' },
+                                    },
+                                    ],
+                                    defaultSeries: {
+                                    type: 'gauge column roundcaps',
+                                    shape: {
+                                        label: {
+                                        text: '%value',
+                                        align: 'center',
+                                        verticalAlign: 'middle',
+                                        },
+                                    },
+                                    },
+                                    series: [
+                                    {
+                                        yAxis: 'ax2',
+                                        name: 'Temperatures',
+                                        palette: {
+                                        id: 'pal2',
+                                        //pointValue: '{%yValue/850}',
+                                        colors: [
+                                            '#b74b37',
+                                            '#009cc9',
+                                        ],
+                                        },
+                                        shape_label: { text: '%valuept', style: { fontSize: 20 } },
+                                        points: [['x', 12]],
+                                    },
+                                    ],
+                                });
+                            </script>
+                            <script>
+                                //-- chartDiv_1
+                                // JS
+                                var chart_3 = JSC.chart('chartDiv_3', {
+                                    debug: true,
+                                    legend_visible: false,
+                                    yAxis: [
+                                    {
+                                        id: 'y3',
+                                        line_width: 0,
+                                        defaultTick_enabled: false,
+                                        scale_range: [0, 100],
+                                    },
+                                    ],
+                                    xAxis: [
+                                    {
+                                        id: 'x3',
+                                        defaultTick_gridLine_width: 'column',
+                                        spacingPercentage: 0.15,
+                                    },
+                                    ],
+                                    defaultSeries: {
+                                    type: 'gauge column roundCaps',
+                                    shape: {
+                                        innerSize: '75%',
+                                        label: [
+                                        {
+                                            text: '%sum%pt',
+                                            verticalAlign: 'middle',
+                                            style_fontSize: 20,
+                                            fontWeight: 'bold',
+                                        },
+                                        ],
+                                    },
+                                    },
+                                    series: [
+                                    {
+                                        name: 'Column Width Grid',
+                                        palette: [
+                                            '#00aad2',
+                                        ],
+                                        yAxis: 'y3',
+                                        xAxis: 'x3',
+                                        points: [['value', 59]],
+                                    },
+                                    ],
+                                });
+                            </script>
+
+
                         </div>
                         <div class="row">
                             <div class="col">
@@ -465,16 +628,16 @@
                                         <tr>
                                             <td class="text-center mobile-badge" rowspan="2">First point of contact</td>
                                             <td class="text-left bg-cell">Could you find the location and phone number of the showroom online (Google Search, SNS, etc.)?</td>
-                                            <td class="text-center bg-cell"><span class="text-success">Yes</span></td>
+                                            <td class="text-center bg-cell"><span class="text-secondary">Yes</span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-left bg-cell">How would you rate your level of satisfaction for the overall process of obtaining information and booking online/through phone call? Please rate on a scale of 1-5</td>
-                                            <td class="text-center bg-cell"><span class="text-success">Yes</span></td>
+                                            <td class="text-center bg-cell"><span class="text-secondary">Yes</span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-center bg-cell mobile-badge" rowspan="2">Greeting</td>
                                             <td class="text-left">Were you greeted with the statement "Welcome to Hyundai"?</td>
-                                            <td class="text-center"><span class="text-success">Yes</span></td>
+                                            <td class="text-center"><span class="text-secondary">Yes</span></td>
                                         </tr>
                                         <tr>
                                             <td class="text-left">Did the receptionist kindly respond to your questions?</td>
@@ -521,6 +684,75 @@
                                 </table>
                             </div>
                         </div>
+                        <script>
+                            //썸네일 가운데 채우기
+                            function setDirection(element) {
+                                if (element.naturalWidth / element.naturalHeight / element.parentNode.offsetWidth * element.parentNode.offsetHeight > 1) {
+                                    element.classList.remove('vertical');
+                                    element.classList.add('horizontal');
+                                } else {
+                                    element.classList.remove('horizontal');
+                                    element.classList.add('vertical');
+                                }
+                            }
+                        </script>
+                        <div class="row">
+                            <div class="col">
+                                <div class="sub-title-area">
+                                    <div class="sub-title">Documents</div>
+                                </div>
+                                <div class="card card-primary card-outline">
+                                    <div class="card-body">
+                                        <!-- 이미지 없을때 -->
+                                        <div class="data-empty">
+                                            <i class="icon-photo"></i>
+                                            <p>The image does not exist.</p>
+                                        </div>
+                                        <!-- 이미지 있을때 -->
+                                        <div class="gallery">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb1.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                                <li class=failed>
+                                                    <div class="data-empty">
+                                                        <i class="icon-photo"></i>
+                                                        <p>Failed to load image.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb2.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb3.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb1.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb2.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="thumb"><img src="../../resources/images/@thumb3.png" alt="" onload="setDirection(this)"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- //실 컨텐츠 -->
 
                     </div>
@@ -535,9 +767,25 @@
             <div class="copyright">
                 Copyright © 2020 HYUNDAI MOTOR COMPANY ALL RIGHT RESERVED
             </div>
+            <div class="btn-top"><button type="button"><i class="icon-top"><span class="sr-only">TOP</span></i></button></div>
         </footer>
     </div>
     <!-- ./wrapper -->
+
+    <!-- modal : Documents -->
+    <div class="modal" tabindex="-1" role="dialog" id="modal-documents">
+        <div class="modal-dialog modal-dialog-centered modal-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">file-name01</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="../../resources/images/@thumb1.png" alt="" class="img-enlarge">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- REQUIRED SCRIPTS -->
 
@@ -549,8 +797,18 @@
     <script src="../../resources/js/adminlte.min.js"></script>
     <!-- chartjs -->
     <script src="../../resources/plugins/chart.js/Chart.min.js"></script>
+    <!-- ui -->
+    <script src="../../resources/js/ui.js"></script>
 
     <script>
+        $('.gallery a').on('click', function(e) {
+            e.preventDefault();
+
+            var src = $(this).find('img').attr('src');
+            $('.img-enlarge').attr('src',src);
+
+            $('#modal-documents').modal('show');
+        })
     </script>
 </body>
 

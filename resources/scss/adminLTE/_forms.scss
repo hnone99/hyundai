@@ -1,7 +1,7 @@
 //
 // Component: Forms
 //
- 
+
 .form-group {
   &.has-icon {
     position: relative;
@@ -97,7 +97,7 @@
 }
 
 label:not(.form-check-label):not(.custom-file-label) {
-  font-weight: $font-weight-bold;
+  //font-weight: $font-weight-bold;
 }
 
 .warning-feedback {
