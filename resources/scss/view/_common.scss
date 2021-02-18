@@ -26,6 +26,9 @@
 .icon-photo{background-image: url('../images/img-no-phpto.svg');width: 72px;height: 72px;}
 .icon-close{background-image: url('../images/icon-modalclose.svg');width: 24px;height: 24px;}
 .icon-top{background-image: url('../images/icon-top.svg');width: 17.2px;height: 17.2px;}
+.icon-level-2{background-image: url('../images/icon-level-2.svg');width: 16px;height: 16px;background-size: 12px 12px;}
+.icon-level-3{background-image: url('../images/icon-level-3.svg');width: 16px;height: 16px;background-size: 4px 4px;}
+
 
 input.form-control{
     height: 40px;
@@ -508,7 +511,7 @@ body.body-login{
     border-top: 1px solid $border-color;text-align: right;padding-top: 20px;margin-top: 20px;
 }
 .btns-center{
-    margin-top: 15px;margin-bottom: 35px;
+    margin-top: 15px;margin-bottom: 35px;text-align: center;
 }
 
 .data-empty{

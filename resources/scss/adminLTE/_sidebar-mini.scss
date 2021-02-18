@@ -167,11 +167,11 @@
 }
 
 .nav-sidebar {
+  .nav-icon{vertical-align: middle;margin-top: -2px;}
   > .nav-item {
     > .nav-link{
       &.active,
       &:focus{background: #00aad2;}
-      i{vertical-align: middle;margin-top: -2px;}
       .right{
         right: 1rem;top: 50%;margin-top: -6.5px;
       }
@@ -187,7 +187,7 @@
     > .nav{
       background: #2b2b2b;
       .nav-link{
-        padding: 6px 30px;
+        padding-top: 6px;padding-bottom: 6px;
       }
       > .nav-item{
         > .nav-link{
@@ -195,7 +195,7 @@
         }
         &.menu-open{
           > .nav-link{
-            i{ transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg); background-image: url('../images/btn-s-minus-down.svg');}
+            p i{ transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg); background-image: url('../images/btn-s-minus-down.svg');}
           }
         }
         //3depth

@@ -1,0 +1,9 @@
+
+#checkList-more{
+    display:inline-block;
+}
+@media (min-width: 992px) { 
+    #checkList-more{
+        display:none;
+    }
+}

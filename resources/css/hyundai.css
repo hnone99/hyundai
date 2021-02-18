@@ -115,6 +115,10 @@
 
 .icon-top { background-image: url("../images/icon-top.svg"); width: 17.2px; height: 17.2px; }
 
+.icon-level-2 { background-image: url("../images/icon-level-2.svg"); width: 16px; height: 16px; background-size: 12px 12px; }
+
+.icon-level-3 { background-image: url("../images/icon-level-3.svg"); width: 16px; height: 16px; background-size: 4px 4px; }
+
 input.form-control { height: 40px; }
 
 select.form-control { height: 40px; border: 1px solid #e4dcd3; letter-spacing: -0.34px; border-radius: 4px; padding-top: 5px; -webkit-appearance: none; -moz-appearance: none; background-position: right 13px top 50%; background-repeat: no-repeat; background-image: url("../images/icon-arrow-01.svg"); padding-right: 40px; }
@@ -449,7 +453,7 @@ body.body-login { height: 100vh; background: #002c5f; }
 
 .btns-right { border-top: 1px solid #e4dcd3; text-align: right; padding-top: 20px; margin-top: 20px; }
 
-.btns-center { margin-top: 15px; margin-bottom: 35px; }
+.btns-center { margin-top: 15px; margin-bottom: 35px; text-align: center; }
 
 .data-empty { border: 1px dashed #e4dcd3; height: 153px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
